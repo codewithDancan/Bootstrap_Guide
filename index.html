@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>Hello world </h1>
+    <!--accordions-->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                    does limit overflow.
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as
+                    the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                    does limit overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- courousels -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/mary.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/uoe_admission.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/vc_uoe.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div>
+        <button type="button" class="btn-close  dark " aria-label="Close"></button>
+    </div>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+        <label class="form-check-label" for="flexCheckChecked">
+          Checked checkbox
+        </label>
+    </div>
+
+    <div class="form-check form-check-reverse">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+        <label class="form-check-label" for="flexRadioDefault1">
+          Default radio
+        </label>
+    </div>
+    <div class="form-check form-check-reverse">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <label class="form-check-label" for="flexRadioDefault2">
+          Default checked radio
+        </label>
+    </div>
+
+    <div class="form-check form-switch form-check-inline">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+    </div>
+
+    <div>
+        <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+        <label class="btn btn-primary" for="btn-check">Log in</label>
+    </div>
+
+    <!--radio ,toggle buttons-->
+    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+    <label class="btn btn-secondary" for="option1">Checked</label>
+
+    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+    <label class="btn btn-secondary" for="option2">Radio</label>
+
+    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" disabled>
+    <label class="btn btn-secondary" for="option3">Disabled</label>
+
+    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+    <label class="btn btn-secondary" for="option4">Radio</label>
+
+    <input type="radio" class="btn-check" name="options" id="options5" autocomplete="off" checked>
+    <label class="btn btn-success" for="options5">i love you</label>
+    <input type="radio" class="btn-check" name="options" id="options6" autocomplete="off" checked>
+    <label class="btn btn-secondary" for="options6">i hate you</label> <br>
+
+    <input type="checkbox" class="btn-check" id="danger-outlined" autocomplete="off">
+    <label class="btn btn-outline-danger" for="danger-outlined">Django is so cool</label><br>
+    <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+    <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+
+    <form class="row g-3">
+        <div class="col-md-4">
+            <label for="validationDefault01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationDefault01" value="i.e Dancan" required>
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefaut02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationDefault02" value="i.e Ngaga">
+        </div>
+        <div class="col-md-4">
+            <label for="validationDefaultUsername" class="form-label">Username</label>
+            <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="exampleFormInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">About yourself</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" col="4"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+
+        <div class="mb-4">
+            <label for="colorInput" class="form-label">pick your color</label>
+            <input type="color" class="form-control form-control-color" id="colorInput" value="#563d7c" title="choose color">
+        </div>
+
+
+        <label for="exampleColorInput" class="form-label">Color picker</label>
+        <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
+        <label for="datalistOptions" class="form-label">Whats your best proramming language</label>
+        <input class="form-control" list="languageOptions" id="datalistOptions" placeholder="Your language">
+        <datalist id="languageOptions">
+            <option value="python">
+            <option value="javascript">
+            <option value="C">
+            <option value="Ruby">
+            <option value="Dart">
+        </datalist>
+
+        <select class="form-select " aria-label="Gender">
+            <option selected>Gender</option>
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+
+        </select>
+
+        <div class="form-check form-check-inline">
+            <label class="form-check-label" id="flexCheckIndeterminate">Safaricom</label>
+            <input for="flexCheckIndeterminate" class="form-check-input" type="checkbox" id="form-ckeck">
+        </div>
+        <div class="form-check form-check-inline">
+            <label class="form-check-label" id="flexCheckIndeterminate">Airtel</label>
+            <input class="form-check-input" type="checkbox" id="flexCheckIndeterminate" checked>
+        </div>
+
+        <div class="form-check form-switch">
+            <label class="form-check-label" id="flexCheckIndeterminate">Safaricom</label>
+            <input for="flexCheckIndeterminate" class="form-check-input" type="checkbox" id="form-ckeck" role="switch">
+            <label for="rangeOptions" class="form-trangelabel">Select your level of education</label>
+            <input type="range" class="form-range" id="rangeOptions" min="0" max="100" step="0.5">
+        </div>
+
+        <!--option group-->
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text">First name and Last name</span>
+            <input type="text" class="form-control" aria-label="First name">
+            <input type="text" class="form-control" aria-label="Last name"><br>
+            <hr>
+            <input type="button" class="btn btn-primary" value="Save">
+        </div>
+
+        <div class="input-group mb-3">
+            <label class="" for=""></label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" placeholder="Enter your username" aria-label="Enter your username" aria-describedby="myBtn">
+            </div>
+            <button class="btn btn-outline-primary" type="button" id="myBtn">Button</button>
+        </div>
+
+        <div class="input-group mb-4">
+            <div class="col-md-5">
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+            <button class="btn btn-outline-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Button</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li> <a href="#" class="dropdwon-item">python.org</a></li>
+                <li> <a href="#" class="dropdwon-item">javascript.org</a></li>
+                <li> <a href="#" class="dropdwon-item">java.org</a></li>
+                <li> <a href="#" class="dropdwon-item">dart.org</a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <div class="input-group mb-3">
+            <label for="OptionsGroup" class="input-group-text">Options</label>
+            <select id="OptionsGroup" class="form-select">
+                <option class="selected" value="Choose...">Choose...</option>
+                <option value="1">one</option>
+                <option value="2">two</option>
+                <option value="3">three</option>
+            </select>
+
+        </div>
+
+        <div class="input-group mb-3">
+            <label for="chooseFile" class="input-group-text">Upload</label>
+            <input class="form-control" type="file" id="chooseFile" placeholder="No file choosen">
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="example@gmail.com">
+            <label for="floatingInput">Email Address</label>
+        </div>
+
+
+        <form class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+                <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                <div class="input-group">
+                    <div class="input-group-text">@</div>
+                    <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Username">
+                </div>
+            </div>
+
+            <div class="col-12">
+                <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
+                <select class="form-select" id="inlineFormSelectPref">
+                <option selected>Choose...</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                    <label class="form-check-label" for="inlineFormCheck">
+                  Remember me
+                </label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+</body>
+
+</html>
